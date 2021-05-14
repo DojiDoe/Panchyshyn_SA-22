@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doji</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Kaushan+Script&family=Montserrat:ital,wght@1,700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"> </script>
+	<script scr="../js/script.js"> </script>
+    <script src="script.js"></script>
+
+    <head>
+<body>
+    <script type="text/javascript">
+        window.addEventListener('load', function(event){
+            document.querySelectorAll(".inlineVideo").forEach((el) => {
+                el.onplay = function(e){
+                    // pause all the videos except the current.
+                    document.querySelectorAll(".inlineVideo").forEach((el1) => {
+                        if(el === el1)
+                            el1.play();
+                        else
+                            el1.pause();
+                    });
+                }
+            });
+        });
+        </script>
+       <header class="header">
+
+        <div class="container">    
+            <div class="logo">
+               <a href="index.html"> <img src="img/logo.png" width="140px" alt="logo"> </a>
+            </div>   
+            <div class="header_burger">
+                <span></span>
+            </div>    
+                <nav class="menu">
+                    <div class="menu_link"><a href="about_us.html">ABOUT US</a></div>
+                    <div class="menu_link"><a href="menu.html">MENU</a></div>
+                    <div class="menu_link"><a href="gallery.html">GALLERY</a></div>
+                    <div class="menu_link"><a href="contact_us.html">CONTACT US</a></div>
+                </nav>  
+                <div class="basket">
+                    <img src="img/search.png" alt="search">
+                    <img src="img/basket.png" alt="basket">
+                </div> 
+        </div> 
+    </header>
+
+    <main>
+       <p class="main_names">Coffe makes <br>life better</p>
+		<div class="container_video">
+			<div class="name">
+				<h2>Best coffe sorts</h2>
+				<p></p>
+			</div>		
+			<div class="video">
+				<video class="inlineVideo" controls poster="img/video1.png">
+					<source src="videos/video1.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+        <div class="line"></div>
+        <p class="main_names">Wake up and <br>smell the coffe</p>
+		<div class="container_video">
+			<div class="name">
+				<h2>Best coffe machines</h2>
+				<p></p>
+			</div>		
+			<div class="video">
+				<video class="inlineVideo" controls poster="img/video.png">
+					<source src="videos/video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+    </main>
+
+    <footer class="footer">
+        <div class="email">
+            <a href="#"><p>dojicoffee@gmail.com</p></a>
+        </div>
+        <div class="social_networks">
+            <img class="youtube" src="img/youtube.png" alt="youtube">
+            <img class="facebook" src="img/facebook-circular-logo.png" alt="facebook">
+            <img class="instagram" src="img/instagram.png" alt="instagram">
+            <img class="linkedin" src="img/linkedin.png" alt="linkedin">
+        </div>
+    </footer>
+</body>
+</html>
